@@ -47,10 +47,10 @@ catch(Exception $e){
 }
 }*/
  //GET DATA FROM DB
- function employee($connect){
+ function student($connect){
             try{
             
-                $sql = "SELECT student_id,name FROM  student";
+                $sql = "SELECT student_id, name FROM  student";
             
             
                 $result = mysqli_query($connect,$sql);
@@ -146,7 +146,7 @@ catch(Exception $e){
        function Jointable($EMP_ID,$connect){
             try{
             
-                $sql = "SELECT * FROM  student , department join '$EMP_Name' = '$EMP_Name' where  ;
+                $sql = "SELECT * FROM students INNER JOIN enrollments ON students.student_id = enrollments.student_id;
             
             
                 $result = mysqli_query($connect,$sql);
