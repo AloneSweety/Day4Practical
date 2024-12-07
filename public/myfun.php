@@ -50,7 +50,7 @@ catch(Exception $e){
  function student($connect){
             try{
             
-                $sql = "SELECT student_id, name FROM  student";
+                $sql = "SELECT student_id, name FROM  students";
             
             
                 $result = mysqli_query($connect,$sql);
@@ -101,7 +101,7 @@ catch(Exception $e){
          function Studentdetails($student_id,$connect){
             try{
             
-                $sql = "SELECT * FROM  student where  student_id = student_id ";
+                $sql = "SELECT * FROM  students where  student_id = student_id ";
             
             
                 $result = mysqli_query($connect,$sql);
